@@ -85,7 +85,14 @@ module.exports = function (grunt) {
                     stdout: true
                 },
                 command: 'hugo --source=src --destination=../public'
+            },
+            githubpages: {
+                options: {
+                    stdout: true
+                },
+                command: 'git subtree push --prefix=public https://github.com/Sareth740/Sareth740.github.io.git gh-pages'
             }
+
         },
         watch: {
             hugo: {
