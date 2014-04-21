@@ -1,9 +1,3 @@
-/*! sareth740 - v0.0.1 - 2014-04-20
-* Copyright (c) 2014 axiomabsolute; Licensed  */
-var hugryApp = angular.module('hugryApp', []);
-
-hugryApp.value('navgridTemplate', 'static/js/app/navgrid/navgrid.html');
-
 var hugryApp = angular.module('hugryApp');
 
 hugryApp.controller('navgrid', function($scope, navgridTemplate){
