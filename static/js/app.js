@@ -1,4 +1,4 @@
-/*! sareth740 - v0.0.1 - 2014-04-20
+/*! sareth740 - v0.0.1 - 2014-04-21
 * Copyright (c) 2014 axiomabsolute; Licensed  */
 var hugryApp = angular.module('hugryApp', []);
 
@@ -8,7 +8,7 @@ var hugryApp = angular.module('hugryApp');
 
 hugryApp.controller('navgrid', function($scope, navgridTemplate){
     var sections = ['Profile', 'Music', 'Scores', 'Equipment', 'Resume', 'Contact'];
-    var sectionIcons = ['fa-info-circle', 'fa-play-circle', 'fa-music', 'fa-desktop fa-microphone', 'fa-file-text', 'fa-envelope'];
+    var sectionIcons = ['fa-info', 'fa-play', 'fa-music', 'fa-desktop fa-microphone', 'fa-file-text', 'fa-envelope'];
     var sectionDetails = ['info', 'music', 'scores', 'equipment', 'resume', 'contact'];
 
     function Section(sectionName, iconName, sectionDetailsTemplate){

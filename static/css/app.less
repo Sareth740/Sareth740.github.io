@@ -36,12 +36,24 @@ body {
 
     .block-grid-icon {
         display: inline-block;
-
     }
 
     .block-grid-caption {
         font-size: 25px;
         color: white;
+    }
+
+    .data-grid-icon {
+        @data-grid-size: 85px;
+
+        height: @data-grid-size;
+        width: @data-grid-size;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid white;
+        border-radius: 50px;
+        line-height: @data-grid-size;
     }
 
 }
