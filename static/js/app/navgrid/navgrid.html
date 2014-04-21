@@ -1,12 +1,10 @@
 <div class="block-grid">
-    <div class="col-sm-4" data-ng-repeat="section in sections">
-        <div class="block-grid-block" data-ng-mouseenter="section.Hovered = true" data-ng-mouseleave="section.Hovered = false">
+    <div class="col-sm-2 block-grid-block" data-ng-repeat="section in sections" data-ng-mouseenter="section.Hovered = true" data-ng-mouseleave="section.Hovered = false">
             <div class="block-grid-icon">
-                <i class="fa fa-5x" data-ng-class="section.SectionIcon"></i>
+                <i class="fa fa-5x data-grid-icon" data-ng-class="section.SectionIcon"></i>
             </div>
             <div class="block-grid-caption" data-ng-show="section.Hovered">
                 {{section.SectionName}}
             </div>
-        </div>
     </div>
 </div>

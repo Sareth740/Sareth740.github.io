@@ -1,8 +1,8 @@
 var hugryApp = angular.module('hugryApp');
 
 hugryApp.controller('navgrid', function($scope, navgridTemplate){
-    var sections = ['Music', 'Profile', 'Sheet Music', 'Equipment', 'Performances', 'Contact'];
-    var sectionIcons = ['fa-play-circle', 'fa-info-circle', 'fa-music', 'fa-desktop fa-microphone', 'fa-file-text', 'fa-envelope'];
+    var sections = ['Profile', 'Music', 'Sheet Music', 'Equipment', 'Resume', 'Contact'];
+    var sectionIcons = ['fa-info-circle', 'fa-play-circle', 'fa-music', 'fa-desktop fa-microphone', 'fa-file-text', 'fa-envelope'];
 
     function Section(sectionName, iconName){
         this.SectionName = sectionName;
