@@ -30,8 +30,8 @@ body {
     margin-top: 350px;
     opacity: 0;
 
-    transition: margin-top 2s, opacity .5s;
-    -webkit-transition: margin-top 2s, opacity .5s;
+    transition: margin-top 1s, opacity 1s;
+    -webkit-transition: margin-top 1s, opacity 1s;
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
@@ -47,20 +47,24 @@ body {
     opacity: 1;
 }
 
+.block-grid.finishedEnteringBlockGrid {
+    margin-top: 50px;
+}
+
 .details.finishedAnimatingGrid {
     opacity: 1;
 }
 
 .block-grid {
 
-    margin-top: 50px;
     margin-bottom: 25px;
     min-height: 100px;
 
     opacity: 0;
+    margin-top: 300px;
 
-    transition: opactiy 2s;
-    -webkit-transition: opacity 2s;
+    transition: opactiy 1s, margin-top .7s;
+    -webkit-transition: opacity 1s, margin-top .7s;
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
