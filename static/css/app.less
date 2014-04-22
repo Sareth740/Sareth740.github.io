@@ -16,12 +16,16 @@ body {
     visibility: hidden;
 }
 
-.signature-block.finishedFadeIn {
+.signature-block.finishedEnteringScriptBlock.finishedEnteringGrid {
     margin-top: 100px;
 }
 
 .signature-block.finishedLoading {
     opacity: 1;
+}
+
+.signature-block.finishedEnteringScriptBlock {
+    margin-top: 250px;
 }
 
 .signature-block {
@@ -47,10 +51,6 @@ body {
     opacity: 1;
 }
 
-.block-grid.finishedEnteringBlockGrid {
-    margin-top: 50px;
-}
-
 .details.finishedAnimatingGrid {
     opacity: 1;
 }
@@ -61,10 +61,10 @@ body {
     min-height: 100px;
 
     opacity: 0;
-    margin-top: 300px;
+    margin-top: 50px;
 
-    transition: opactiy 1s, margin-top .7s;
-    -webkit-transition: opacity 1s, margin-top .7s;
+    transition: opactiy 1s;
+    -webkit-transition: opacity 1s;
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
@@ -104,8 +104,8 @@ body {
 
     opacity: 0;
 
-    transition: opactiy 2s;
-    -webkit-transition: opacity 2s;
+    transition: opactiy 1s;
+    -webkit-transition: opacity 1s;
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
