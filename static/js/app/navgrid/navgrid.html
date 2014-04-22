@@ -1,4 +1,4 @@
-<div class="block-grid">
+<div class="block-grid"  data-ng-class="{finishedAnimatingScriptBlock: finishedAnimatingScriptBlock}">
     <div class="col-sm-2 block-grid-block" data-ng-repeat="section in sections" data-ng-mouseenter="section.Hovered = true" data-ng-mouseleave="section.Hovered = false" data-ng-click="setSelectedSection(section)">
             <div class="block-grid-icon">
                 <i class="fa fa-3x data-grid-icon" data-ng-class="section.SectionIcon"></i>
@@ -8,5 +8,5 @@
             </div>
     </div>
 </div>
-<div class="details col-xs-12" data-ng-include="selectedSection.SectionDetails">
+<div class="details col-xs-12" data-ng-include="selectedSection.SectionDetails"  data-ng-class="{finishedAnimatingGrid: finishedAnimatingGrid}">
 </div>

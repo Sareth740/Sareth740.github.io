@@ -16,17 +16,22 @@ body {
     visibility: hidden;
 }
 
-.signature-block.finishedLoading {
+.signature-block.finishedFadeIn {
     margin-top: 100px;
+}
+
+.signature-block.finishedLoading {
+    opacity: 1;
 }
 
 .signature-block {
 
     text-align: center;
     margin-top: 350px;
+    opacity: 0;
 
-    transition: margin-top 2s;
-    -webkit-transition: margin-top 2s;
+    transition: margin-top 2s, opacity .5s;
+    -webkit-transition: margin-top 2s, opacity .5s;
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
@@ -38,17 +43,11 @@ body {
 
 }
 
-.navgrid-wrapper {
-    opacity: 0;
-
-    transition: opactiy 2s;
-    -webkit-transition: opacity 2s;
-
-    transition-timing-function: easeInSine;
-    -webkit-transition-timing-function: easeInSine;
+.block-grid.finishedAnimatingScriptBlock {
+    opacity: 1;
 }
 
-.navgrid-wrapper.finishedAnimatingScriptBlock {
+.details.finishedAnimatingGrid {
     opacity: 1;
 }
 
@@ -57,6 +56,14 @@ body {
     margin-top: 50px;
     margin-bottom: 25px;
     min-height: 100px;
+
+    opacity: 0;
+
+    transition: opactiy 2s;
+    -webkit-transition: opacity 2s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
 
     .block-grid-block {
         text-align: center;
@@ -90,4 +97,12 @@ body {
 .details {
     background-color: rgba(255,255,255,.3);
     min-height: 700px;
+
+    opacity: 0;
+
+    transition: opactiy 2s;
+    -webkit-transition: opacity 2s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
 }
