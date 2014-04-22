@@ -16,16 +16,39 @@ body {
     visibility: hidden;
 }
 
-.signature-block.finishedEnteringScriptBlock.finishedEnteringGrid {
-    margin-top: 100px;
+.signature-block.finishedEnteringScriptTitle.finishedEnteringGrid {
+    margin-top: 50px;
 }
 
 .signature-block.finishedLoading {
     opacity: 1;
 }
 
-.signature-block.finishedEnteringScriptBlock {
+.signature-title.finishedEnteringScriptBlock {
+    opacity: 1;
+}
+
+.signature-block.finishedEnteringScriptTitle {
     margin-top: 250px;
+}
+
+.signature-title {
+    text-align: center;
+    opacity: 0;
+
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
+
+    color: teal;
+
+    h3 {
+        font-family: 'Megrim', cursive;
+        font-size: 72px;
+        margin: 0 0;
+    }
 }
 
 .signature-block {
@@ -61,7 +84,7 @@ body {
     min-height: 100px;
 
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 25px;
 
     transition: opactiy 1s;
     -webkit-transition: opacity 1s;

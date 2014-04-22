@@ -7,21 +7,25 @@ hugryApp.controller('hugryController', function($scope, $timeout){
     $timeout(function(){
         $scope.finishedLoading = true;
     }, 1000).then(function(){
-        $timeout(function(){
+        return $timeout(function(){
             $scope.finishedEnteringScriptBlock = true;
-        }, 700);
+        }, 1000);
     }).then(function(){
-        $timeout(function(){
+        return $timeout(function(){
+            $scope.finishedEnteringScriptTitle = true;
+        }, 500);
+    }).then(function(){
+        return $timeout(function(){
             $scope.finishedAnimatingScriptBlock = true;
-        }, 1700);
+        }, 500);
     }).then(function(){
-        $timeout(function(){
+        return $timeout(function(){
             $scope.finishedEnteringGrid = true;
-        }, 2700);
+        }, 500);
     }).then(function(){
-        $timeout(function(){
+        return $timeout(function(){
             $scope.finishedAnimatingGrid = true;
-        }, 3500);
+        }, 500);
     });
 
 });
