@@ -3,14 +3,33 @@ body {
     color: white;
 }
 
+.fa-play::before {
+    margin-left: 10px;
+}
+
+.fa-music::before {
+    margin-left: -6px;
+    margin-top: -2px;
+}
+
 .hidden-sized {
     visibility: hidden;
+}
+
+.signature-block.finishedLoading {
+    margin-top: 100px;
 }
 
 .signature-block {
 
     text-align: center;
-    margin-top: 100px;
+    margin-top: 350px;
+
+    transition: margin-top 2s;
+    -webkit-transition: margin-top 2s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
     
     h1 {
         font-family: 'Megrim', cursive;
@@ -19,8 +38,18 @@ body {
 
 }
 
-.signature-block.initial {
-    margin-top: 20%;
+.navgrid-wrapper {
+    opacity: 0;
+
+    transition: opactiy 2s;
+    -webkit-transition: opacity 2s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
+}
+
+.navgrid-wrapper.finishedAnimatingScriptBlock {
+    opacity: 1;
 }
 
 .block-grid {
@@ -60,5 +89,5 @@ body {
 
 .details {
     background-color: rgba(255,255,255,.3);
-    min-height: 500px;
+    min-height: 700px;
 }

@@ -13,10 +13,10 @@
         <script type="text/javascript" src="static/js/app.js"></script>
 	</head>
 	<body>
-        <div class="container-fluid" data-ng-app="hugryApp">
+        <div class="container-fluid" data-ng-app="hugryApp" data-ng-controller="hugryController">
             <div>
     <div class="row">
-        <div class="signature-block">
+        <div class="signature-block" data-ng-class="{finishedLoading: finishedLoading}">
             <h1>Erik T. Irgens</h1>
         </div>
     </div>
@@ -24,10 +24,8 @@
 
             <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <div data-ng-app>
-                <div data-ng-controller="navgrid" data-ng-include="navgridTemplate"></div>
-            </div>
+        <div class="col-xs-12 navgrid-wrapper" data-ng-class="{finishedAnimatingScriptBlock: finishedAnimatingScriptBlock}">
+            <div data-ng-controller="navgrid" data-ng-include="navgridTemplate"></div>
         </div>
     </div>
 </div>

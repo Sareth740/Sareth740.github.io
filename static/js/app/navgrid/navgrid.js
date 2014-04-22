@@ -1,6 +1,6 @@
 var hugryApp = angular.module('hugryApp');
 
-hugryApp.controller('navgrid', function($scope, navgridTemplate){
+hugryApp.controller('navgrid', function($scope, $timeout, navgridTemplate){
     var sections = ['Profile', 'Music', 'Scores', 'Equipment', 'Resume', 'Contact'];
     var sectionIcons = ['fa-info', 'fa-play', 'fa-music', 'fa-desktop fa-microphone', 'fa-file-text', 'fa-envelope'];
     var sectionDetails = ['info', 'music', 'scores', 'equipment', 'resume', 'contact'];
@@ -14,7 +14,10 @@ hugryApp.controller('navgrid', function($scope, navgridTemplate){
     var defaultSection = new Section("Home", "", "site/base");
 
     $scope.setSelectedSection = function(section){
-        if (section){
+        if ($scope.selectedSection.SectionDetails === section.SectionDetails){
+            $scope.selectedSection = defaultSection;
+        }
+        else if (section){
             $scope.selectedSection = section;
         } else {
             $scope.selectedSection = defaultSection;
