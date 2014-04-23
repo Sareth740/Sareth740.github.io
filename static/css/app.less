@@ -1,6 +1,20 @@
+html {
+    font-size: 10px; // Sets base font to 10px
+}
+
 body {
     background: #131313 url(/../../img/back.jpg) top;
     color: white;
+}
+
+a {
+    color: turquoise;
+}
+
+p {
+    line-height: 3rem;
+    font-size: 2rem;
+    margin: 1.5rem 0rem;
 }
 
 .fa-play::before {
@@ -48,6 +62,7 @@ body {
         font-family: 'Syncopate', 'sans-serif';
         font-size: 55px;
         margin: 0 0;
+        text-shadow: #E83623 -1px 1px 1px;
     }
 }
 
@@ -66,6 +81,7 @@ body {
     h1 {
         font-family: 'Megrim', cursive;
         font-size: 145px;
+        text-shadow: #FFF -1px 1px 1px;
     }
 
 }
@@ -99,6 +115,11 @@ body {
 
     .block-grid-icon {
         display: inline-block;
+        text-shadow: teal 0px 0px 1px;
+    }
+
+    .block-grid-icon.selected  > i{
+        border-color: #E83623;
     }
 
     .block-grid-caption {
@@ -132,4 +153,6 @@ body {
 
     transition-timing-function: easeInSine;
     -webkit-transition-timing-function: easeInSine;
+
+    border-radius: 2px;
 }
