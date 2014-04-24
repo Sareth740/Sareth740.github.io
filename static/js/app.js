@@ -1,4 +1,4 @@
-/*! sareth740 - v0.0.1 - 2014-04-22
+/*! sareth740 - v0.0.1 - 2014-04-23
 * Copyright (c) 2014 axiomabsolute; Licensed  */
 var hugryApp = angular.module('hugryApp', []);
 
