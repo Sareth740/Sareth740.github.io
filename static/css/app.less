@@ -63,7 +63,7 @@ p {
     opacity: 1;
 }
 
-.details.finishedAnimatingGrid {
+.details.finishedAnimatingGrid, .intro.finishedAnimatingGrid {
     opacity: 1;
 }
 
@@ -190,4 +190,34 @@ p {
         margin-bottom: 35px;
         color: turquoise;
     }
+}
+
+.intro {
+
+    opacity: 0;
+
+    transition: opactiy 1s;
+    -webkit-transition: opacity 1s;
+
+    transition-timing-function: easeInSine;
+    -webkit-transition-timing-function: easeInSine;
+}
+
+#intro-carousel {
+
+    .carousel-inner {
+        background-color:black;
+        border-radius: 4px;
+    }
+
+    .item {
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
 }

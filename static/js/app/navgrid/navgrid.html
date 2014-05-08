@@ -10,5 +10,7 @@
             </div>
     </div>
 </div>
-<div class="details col-xs-12" data-ng-include="selectedSection.SectionDetails"  data-ng-class="{finishedAnimatingGrid: finishedAnimatingGrid}">
+<div class="details col-xs-12" data-ng-if="selectedSection !== null" data-ng-include="selectedSection.SectionDetails"  data-ng-class="{finishedAnimatingGrid: finishedAnimatingGrid}">
+</div>
+<div class="intro col-xs-12" data-ng-show="selectedSection === null" data-ng-include="'/site/base'" data-ng-class="{finishedAnimatingGrid: finishedAnimatingGrid}">
 </div>

@@ -11,10 +11,10 @@ hugryApp.controller('navgrid', function($scope, $timeout, navgridTemplate){
         this.SectionDetails = sectionDetailsTemplate;
     }
 
-    var defaultSection = new Section("Home", "", "site/base");
+    var defaultSection = null; //new Section("Home", "", "site/base");
 
     $scope.setSelectedSection = function(section){
-        if ($scope.selectedSection.SectionDetails === section.SectionDetails){
+        if ($scope.selectedSection && $scope.selectedSection.SectionDetails === section.SectionDetails){
             $scope.selectedSection = defaultSection;
         }
         else if (section){

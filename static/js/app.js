@@ -1,4 +1,4 @@
-/*! sareth740 - v0.0.1 - 2014-04-23
+/*! sareth740 - v0.0.1 - 2014-05-07
 * Copyright (c) 2014 axiomabsolute; Licensed  */
 var hugryApp = angular.module('hugryApp', []);
 
@@ -45,10 +45,10 @@ hugryApp.controller('navgrid', function($scope, $timeout, navgridTemplate){
         this.SectionDetails = sectionDetailsTemplate;
     }
 
-    var defaultSection = new Section("Home", "", "site/base");
+    var defaultSection = null; //new Section("Home", "", "site/base");
 
     $scope.setSelectedSection = function(section){
-        if ($scope.selectedSection.SectionDetails === section.SectionDetails){
+        if ($scope.selectedSection && $scope.selectedSection.SectionDetails === section.SectionDetails){
             $scope.selectedSection = defaultSection;
         }
         else if (section){
